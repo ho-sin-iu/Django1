@@ -1,5 +1,6 @@
 from django.db import models
 
+#f
 class Post(models.Model):
     title = models.CharField(max_length=200)
     slug = models.CharField(max_length=200)
