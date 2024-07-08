@@ -9,5 +9,8 @@ def index(requests):
     now = datetime.now()
     return render(requests, "index.html", locals())
 
+def showPost(requests, slug):
+    return HttpResponse(slug)
+
 def sayhello(request):
 	return HttpResponse('Hello Django!')
