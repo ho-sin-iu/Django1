@@ -14,7 +14,6 @@ class Post(models.Model):
         return self.title
 
 class Guestbook(models.Model):
-    title = models.CharField(max_length=200)
     name = models.CharField(max_length=20)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=20)
@@ -25,4 +24,4 @@ class Guestbook(models.Model):
         ordering = ['-req_time']
     
     def __str__(self):
-        return self.title
+        return self.name
