@@ -9,7 +9,7 @@ from datetime import datetime
 def index(requests):
     posts = Post.objects.all()
     now = datetime.now()
-    return render(requests, "index.html", locals())
+    return render(requests, "pages/index.html", locals())
 
 def showPost(requests, slug):
     # 1. 查詢資料庫
@@ -19,7 +19,7 @@ def showPost(requests, slug):
         return redirect("/")
     except MultipleObjectsReturned:
         return redirect("/")
-    return render(requests, "post.html", locals())
+    return render(requests, "pages/post.html", locals())
 
 def sayhello(request):
 	return HttpResponse('Hello Django!')

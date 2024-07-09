@@ -1,0 +1,9 @@
+{% extends "scaffolds/base.html" %}
+
+{% block content %}
+    <h1> {{ post.title }} </h1>
+    <hr>
+    <p><i>這是用模板繼承產生的。</i></p>
+    <p class="post_body"> {{ post.content }}</p>
+    <p class="post_date"> 發表日期：{{ post.pub_date }}</p>
+{% endblock %}
