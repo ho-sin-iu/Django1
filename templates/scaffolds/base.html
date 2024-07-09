@@ -2,9 +2,12 @@
 <head>
     <meta charset="utf-8">
     <title>Django CMS</title>
-    {% include "components/header.css.html" %}
+    {% comment %} {% include "components/header.css.html" %} {% endcomment %}
+    {% load static %}
+    {% include "components/header.lib.html" %}
 </head>
 <body>
+    <img src="{% static "images/logo.png" %}" width=50>
     {% block content %} {% endblock %}
 
     <hr>
