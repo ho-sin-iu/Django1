@@ -1,9 +1,9 @@
 {% extends "scaffolds/base.html" %}
 
 {% block content %}
-    <h1>Welcome to My Blog</h1>
+    <h1>Hoan-gêng Kong-lîm!</h1>
     <hr>
-    <p><i>這是用模板繼承產生的。</i></p>
+    <!--This page is inherited from a Django template.-->
     {% for post in posts %}  
         <a href="post/{{post.slug}}">
             <p class="post_title"> {{ post.title }}</p>
