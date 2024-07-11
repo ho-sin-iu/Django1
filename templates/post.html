@@ -8,7 +8,7 @@
         <h1> {{ post.title }} </h1>
 
         <hr>
-        <p class="post_body"> {{ post.content }}</p>
+        <p class="post_body"> {{ post.content | safe | linebreaks }}</p>
         <p class="post_date"> {{ post.pub_date }}</p>
         <hr>
 
