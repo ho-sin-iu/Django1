@@ -1,14 +1,4 @@
-# Django Blog 
-## Hello?
+# Introduction
+- This [Django blog](https://qavit.learnai2024.net) belongs to an educational cloud project led by Dr. Wayne Chang during July to August, 2024.
+- The blog has been deployed to Google Cloud Compute Engine.
 
-ㄨㄛˇ ㄉㄜ˙ ㄉㄧˋ 一 ㄍㄜ˙ DJANGO ㄨㄤˇ ㄓㄢˋ
-
-```sh
-python manage.py runserver
-```
-
-> Hello!
-
----
-
-![Minion](https://octodex.github.com/images/minion.png)
