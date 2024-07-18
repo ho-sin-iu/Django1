@@ -5,6 +5,6 @@
     <hr>
     <!--This page is inherited from a Django template.-->
     {% load markdown_tag %}
-    <p class="post_body"> {{ post.content | markdown | safe | linebreaks }}</p>
+    <p class="post_body"> {{ post.content | markdown | safe }} </p> 
     <p class="post_date"> Published: {{ post.pub_date }}</p>
 {% endblock %}

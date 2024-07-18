@@ -20,6 +20,3 @@ def showPost(requests, slug):
     except MultipleObjectsReturned:
         return redirect("/")
     return render(requests, "pages/post.html", locals())
-
-def sayhello(request):
-	return HttpResponse('Hello Django!')

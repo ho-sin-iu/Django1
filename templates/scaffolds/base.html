@@ -2,12 +2,14 @@
 <head>
     <meta charset="utf-8">
     <title>Qavit's Django blog</title>
-    {% comment %} {% include "components/header.css.html" %}  {% endcomment %}
     {% load static %}
-    {% comment %} {% include "components/header.lib.html" %} {% endcomment %}
+    <link rel="icon" href="{% static "images/snake.ico" %}">
+    {% include "components/header.css.html" %} 
+    {% include "components/header.lib.html" %}
+    
 </head>
 <body>
-    <img src="{% static "images/logo.png" %}" width=50>
+    <img src="{% static "images/dolphin.png" %}" width=50>
     {% block content %} {% endblock %}
 
     <hr>

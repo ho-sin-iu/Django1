@@ -1,12 +1,15 @@
 {% extends "scaffolds/base.html" %}
 
 {% block content %}
-    <h1>Welcome! <i>Hoan-gêng Kong-lîm!</i></h1>
+    <h1 style="color:MediumSeaGreen">Welcome to Qavit's Django blog!</h1>
     <hr>
     <!--This page is inherited from a Django template.-->
+    <ol>
     {% for post in posts %}  
-        <a href="post/{{post.slug}}">
+        <li><a href="post/{{post.slug}}">
             <p class="post_title"> {{ post.title }}</p>
-        </a>
+        </a></li>
     {% endfor %}
+    </ol>
+    ☞ View the <a href="https://github.com/qavit/Django1">GitHub<a> repository.
 {% endblock %}
