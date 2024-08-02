@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
-from django.http import JsonResponse
 from blog_post.models import Post
 from datetime import datetime 
 
